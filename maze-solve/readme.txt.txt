@@ -4,6 +4,15 @@
 
 ## __init__(self, filename):This function handle by Maze() class.This function read the file which user given argv[1] by 'with open(filename) as f:'.Then file 'f' store in 'contents'. 'contents' read height and width of the maze.Creat a array 'walls[]' and find start and goal of the maze.if the maze has extra row then its handle by 'IndexError'.
 
+## print(self): This function also hanble by Maze() class. This function print the original maze photo.
+
+## neighbors(self, state): This function also hanble by Maze() class.This function find all possible path to solve the maze.
+
+## solve(self) : This function solve the maze if there is atleast one solution.Its starts by creating a node which is start point(A). Then it add next node by using add method of 'stackFrontier' or 'QueueFrontier'.
+
+## output_image(self, filename, show_solution=True, show_explored=False)
+This function creates an image of the maze, optionally showing the solution and the explored paths.The maze is saved as an image file named maze.png.
+
 
 
 
